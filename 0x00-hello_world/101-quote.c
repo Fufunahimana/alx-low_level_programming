@@ -3,11 +3,11 @@
 
 
 /**
- * main - Prints a statement to the standard error
- *
- * Return: 1
+ * main - A c program that prints a line  to the standard error
+ * Return: 1 (Succes)
  */
 int main(void)
 {
-        fprintf(stderr, "\"And that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+        fput(stderr, "\"And that piece of art is useful\" - Dora Korpar, 2015-10-19\n",stdout);
         return (1);
+}
