@@ -1,34 +1,32 @@
 #include <stdio.h>
 
+
 /**
- * main - prints all possible different combinations of three digits
- * using the smallest combination of three digits
- *
- * Return: 0 if program completes successfully
+ * main - prints all possible different combinations of two digits
+ * Return: ALways 0 (Success)
  */
 int main(void)
 {
-int i, j, k;
+        int n, m;
 
-for (i = 0; i < 8; i++)
-{
-for (j = i + 1; j < 9; j++)
-{
-for (k = j + 1; k <= 9; k++)
-{
-putchar(i + '0');
-putchar(j + '0');
-putchar(k + '0');
 
-if (i != 7 || j != 8 || k != 9)
-{
-putchar(',');
-putchar(' ');
+        for (n = 48; n <= 56; n++)
+        {
+                for (m = 49; m <= 57; m++)
+                {
+                        if (m > n)
+                        {
+                                putchar(n);
+                                putchar(m);
+                                if (n != 56 || m != 57)
+                                {
+                       :wq                 putchar(',');
+                                        putchar(' ');
+                                }
+                        }
+                }
+        }
+        putchar('\n');
+        return (0);
 }
-}
-}
-}
-printf("\n");
 
-return (0);
-}²
