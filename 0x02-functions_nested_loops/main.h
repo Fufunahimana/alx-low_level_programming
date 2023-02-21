@@ -1,14 +1,6 @@
-#include "main.h"
+#ifndef MAIN_H
+#define MAIN_H
 
-int main(void)
-{
-_putchar("_");
-_putchar("p");
-_putchar("t");
-_putchar("c");
-_putchar("h");
-_putchar("a");
-_putchar("r");
-_putchar("\n");
-return 0;
-}
+int _putchar(char c)
+
+#endif
