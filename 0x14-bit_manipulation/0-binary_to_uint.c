@@ -5,7 +5,6 @@
 * The function will convert a binary number to an unsigned int
 * @b: pointing a string of the binary number(0&1)
 * Return: the converted number
-* whritten by (Fulgence nahimana)
 */
 unsigned int binary_to_uint(const char *b)
 {
