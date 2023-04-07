@@ -2,17 +2,17 @@
 
 
 /**
-* set_bit - function that sets the value of a bit at a given index to 0
+* set_bit - This function sets a bit at a given index to 1
 * @n: pointer to the number to change
-* @index: index of the bit to set to 0
+* @index: index of the bit to set to 1
 *
-* Return: 0 for success, -1 for failure
+* Return: 1 for success, -1 for failure
 */
 int set_bit(unsigned long int *n, unsigned int index)
 {
 if (index > 63)
 return (-1);
 *n = ((1UL << index) | *n);
-return (0);
+return (1);
 }
 
