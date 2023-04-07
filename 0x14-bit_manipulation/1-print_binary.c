@@ -5,7 +5,6 @@
 * @n: number to print in binary
 * main - check the code
 * Return: no return
-* whritten by  Fulgence nahimana
 */
 void print_binary(unsigned long int n)
 {
