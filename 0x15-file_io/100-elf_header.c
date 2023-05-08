@@ -55,8 +55,6 @@ printf("  Magic:   ");
 for (a = 0; a < EI_NIDENT; a++)
 {
 printf("%02x", e_ident[a]);
-
-
 if (a == EI_NIDENT - 1)
 printf("\n");
 else
@@ -121,8 +119,6 @@ void print_version(unsigned char *e_ident)
 {
 printf("Version:%d",
 e_ident[EI_VERSION]);
-
-
 switch (e_ident[EI_VERSION])
 {
 case EV_CURRENT:
@@ -199,7 +195,7 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 {
 if (e_ident[EI_DATA] == ELFDATA2MSB)
 e_type >>= 8;
-printf("  Type:                              ");
+printf("  Type: ");
 switch (e_type)
 {
 case ET_NONE:
@@ -231,7 +227,6 @@ printf("<unknown: %x>\n", e_type);
 void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 {
 printf("Entry point address: ");
-
 if (e_ident[EI_DATA] == ELFDATA2MSB)
 {
 e_entry = ((e_entry << 8) & 0xFF00FF00) |
@@ -243,15 +238,12 @@ printf("%#x\n", (unsigned int)e_entry);
 else
 printf("%#lx\n", e_entry);
 }
-
-
 /**
 * close_elf - that function closes an ELF file.
 * @elf: The file descriptor of the ELF file.
 *
 * Description: If the file cannot be closed - exit code 98.
 */
-
 void close_elf(int elf)
 {
 if (close(elf) == -1)
@@ -261,16 +253,12 @@ dprintf(STDERR_FILENO,
 exit(98);
 }
 }
-
-
 /**
 * main - that function displays the information contained in the
 * ELF header at the start of an ELF file.
 * @argc: The number of arguments supplied to the program.
 * @argv: An array of pointers to the arguments.
-*
 * Return: 0 on success.
-*
 * Description: If the file is not an ELF File or
 * the function fails - exit code 98.
 */
