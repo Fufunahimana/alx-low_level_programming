@@ -2,7 +2,10 @@
 
 
 /**
-* create_file - This function creates a file.
+* create_file - This is a C function that creates a file
+* with the name specified in the filename parameter and 
+* writes the text content specified 
+* in the text_content parameter to it
 * @filename: filename is the name of the file to created
 * @text_content: is a NULL terminated string to write to the file
 *
