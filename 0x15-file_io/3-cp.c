@@ -6,7 +6,8 @@ char *create_buffer(char *file);
 void close_file(int fo);
 
 /**
-* cp - This program that copies the content of a file to another file.
+* cp - This function that creates a buffer
+* of 1024 bytes using the malloc().
 * create_buffer - Allocates 1024 bytes for a buffer.
 * @file: The name of the file buffer is storing chars for.
 * Return: A pointer to the newly-allocated buffer.
@@ -49,9 +50,9 @@ exit(100);
 * Return: 0 on success.
 *
 * Description: If the argument count is incorrect - exit code 97.
-*              If file_from does not exist or cannot be read - exit code 98.
-*              If file_to cannot be created or written to - exit code 99.
-*              If file_to or file_from cannot be closed - exit code 100.
+* If file_from does not exist or cannot be read - exit code 98.
+* If file_to cannot be created or written to - exit code 99.
+* If file_to or file_from cannot be closed - exit code 100.
 */
 
 int main(int argc, char *argv[])
