@@ -6,7 +6,7 @@ char *create_buffer(char *file);
 void close_file(int fo);
 
 /**
-* cp - This function that creates a buffer
+* create_buffer - This function that creates a buffer
 * of 1024 bytes using the malloc().
 * create_buffer - Allocates 1024 bytes for a buffer.
 * @file: The name of the file buffer is storing chars for.
