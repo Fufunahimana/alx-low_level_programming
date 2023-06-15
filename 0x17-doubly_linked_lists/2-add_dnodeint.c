@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_dnodeint- that function inserts 
+ * add_dnodeint- that function inserts
  * a new node at the beginnig.
  * @head: Is the pointer to the direction of the head
  * @n:The data integer
